@@ -1,3 +1,6 @@
+@import url('global.css');
+@import url('reset.css');
+
 .header {
   display: flex;
   flex-flow: row wrap;
