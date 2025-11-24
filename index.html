@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Reis | Portfolio</title>
-    <meta name="description" content="Portfólio do desenvolvedor fullstack Victor Reis Ferreira para compartilhar projetos e habilidades desenvolvidas.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Reis | Portfolio</title>
+  <meta name="description" content="Portfólio do desenvolvedor fullstack Victor Reis para compartilhar projetos e habilidades desenvolvidas.">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/main.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
@@ -24,16 +29,19 @@
                         <span class="menu__text">Home</span>
                     </a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#sobre">
-                        <span class="menu__text">Sobre</span>
-                    </a>
-                </li>
+
                 <li class="menu__item">
                     <a class="menu__link" href="#projetos">
                         <span class="menu__text">Projetos</span>
                     </a>
                 </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+
                 <li class="menu__item">
                     <a class="menu__link" href="#contato">
                         <span class="menu__text">Contato</span>
@@ -41,13 +49,18 @@
                 </li>
             </ul>
         </nav>
+
         <div class="header__brand">
-            <img class="brand__logo" src="assets/images/VRF logo.png" alt="Logo VRF">
+            <a href="https://github.com/victorrf" target="_blank">
+                <img class="brand__logo" src="assets/images/VRF logo.png" alt="Logo EA">
+            </a>
         </div>
+
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
     </header>
+
     <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
@@ -56,18 +69,21 @@
                     <span class="menu__text">Home</span>
                 </a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
+
             <li class="menu__item">
                 <a class="menu__link" href="#projetos">
                     <i class="menu__icon bi bi-window-stack"></i>
                     <span class="menu__text">Projetos</span>
                 </a>
             </li>
+
+            <li class="menu__item">
+                <a class="menu__link" href="#sobre">
+                    <i class="menu__icon bi bi-person"></i>
+                    <span class="menu__text">Sobre</span>
+                </a>
+            </li>
+
             <li class="menu__item">
                 <a class="menu__link" href="#contato">
                     <i class="menu__icon bi bi-envelope"></i>
@@ -76,12 +92,684 @@
             </li>
         </ul>
     </nav>
-    <main></main>
+
+    <main id="home">
+        <div class="main__content1">
+            <p>Olá 😎,</p>
+
+            <h1>Sou o <br>Victor Reis</h1>
+
+            <div class="texto-dinamico">
+                <h2><span></span></h2>
+            </div> 
+
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu__link" href="https://github.com/victorrf" target="_blank">
+                        <i class="menu__icon bi bi-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__link" href="https://www.linkedin.com/in/victorreisferreira/" target="_blank">
+                        <i class="menu__icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__link" href="https://w.app/victorrf" target="_blank">
+                        <i class="menu__icon bi bi-whatsapp"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__link" href="https://discord.com/users/315533560444354561" target="_blank">
+                        <i class="menu__icon bi bi-discord"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>  
+            </a>
+        </div>
+    </main>
+
+    <section class="technologies">
+        <h2><strong>Habilidades conhecidas</strong></h2>
+
+        <ul class="technologies__list">
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo JavaScript">
+            </li>
+
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML 5">
+            </li>
+
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+            </li>
+
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/github.svg" alt="Logo Github">
+            </li>
+
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/git.svg" alt="Logo Git">
+            </li>
+        </ul>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="about__content1">  
+            <img class="about__photo" src="assets/images/avatar.jpeg" alt="">
+
+            <div class="about__description">
+                <h2>Sobre mim</h2>
+
+                <p><strong>Olá! Meu nome é Victor Reis e sou um desenvolvedor fullstack em formação.</strong> Sou realmente apaixonado por tecnologia e tenho confiança de que posso agregar valor a qualquer equipe com minhas habilidades.</p>  
+
+                <p>Gosto de encarar desafios e estou sempre buscando aprender mais. Procuro participar ativamente de comunidades de programação, tanto para receber feedback sobre meus projetos quanto para compartilhar o que sei com outros desenvolvedores.</p>
+
+                <p>Meus interesses incluem jogos, animes, viagens e idiomas. Adoro explorar novas histórias, mundos e culturas por meio dessas experiências. 🎮🛫</p>  
+
+                <div class="about__icons">
+                    <i class="bi bi-translate"></i>
+                    <span>Inglês: Intermediário</span>
+                </div>
+
+                <div class="description__buttons">
+                    <a href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
+                        <button class="btn btn--primary">
+                            <span>Conecte-se Comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button> 
+                    </a>
+
+                    <a href="">
+                        <button class="btn">
+                            <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about__content2">
+            <div class="col1">
+                <div class="row1">
+                    <h3>Formação</h3>
+
+                    <h4>Ciência da Computação</h4>
+
+                    <span>Mar 2017 - Set 2021</span>
+
+                    <div class="about__icons">
+                        <i class="bi bi-bank"></i>
+                        <span>Centro Universitário UniCarioca</span>
+                    </div>
+
+                    <div class="about__icons">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Bacharelado</span>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <h3>Experiências</h3>
+
+                    <h4>Militar</h4>
+
+                    <span>Força Aérea Brasileira. Mar 2017 - Jul 2024</span>
+
+                    <span>De Soldado de Segunda Classe até Cabo, pertenci à Célula de Contrainteligência e Segurança Orgânica do Grupamento de Segurança e Defesa da Base Aérea do Galeão.</span>
+
+                    <ul class="about__list">
+                        <li class="about__item">Vigilância eletrônica;</li>
+
+                        <li class="about__item">Manutenção e instalação de computadores, equipamentos de rede, servidores;</li>
+
+                        <li class="about__item">Manutenção e instalação de câmeras de vigilância, catracas, cancelas, totens;</li>
+
+                        <li class="about__item">Manutenção e instalação de softwares de vigilância e controle de acesso.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col2">
+                <h3>Cursos</h3>
+
+                <div id="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__header start">
+                            <span>Formação Ruby Developer</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>
+                                Digital Innovation One(DIO) - Jan/2025. 34h.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>Bootcamp Nexa - Machine Learning para Iniciantes na AWS</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+
+                        <div class="accordion__body">
+                            <p>
+                                Digital Innovation One(DIO) - Ago/2024. 10h.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <button class="accordion__header end">
+                            <span>Bootcamp Vivo - Python AI Backend Developer</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+
+                        <div class="accordion__body end">
+                            <p>
+                                Digital Innovation One(DIO). Jul/2024. 67h.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <button class="accordion__header end">
+                            <span>Forsoft - Desenvolvimento Web</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body end">
+                            <p>
+                                Instituto Infnet. Out/2015. 60h.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>Projetos</h2>
+
+        <div class="projects__container">
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/exemploTrilha.png" alt="Capa da Trilha CSS Desafio 01 da DIO">
+
+                <div class="card__body">
+                    <h3 class="card__title">Trilha CSS Desafio 01</h3>
+
+                    <p class="card__description">Desafio 01 da Trilha de CSS da DIO</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">Apenas HTML e CSS;</li>
+                        <li class="card__item">Landing page da Trilha responsiva.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML 5">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/trilha-css-desafio-01/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                        
+                        <a href="https://github.com/victorrf/trilha-css-desafio-01" target="_blank">  
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projetos/ExemploDetona.png" alt="Capa Jogo do Detona Ralph">
+
+                <div class="card__body">
+                    <h3 class="card__title">Jogo do Detona Ralph</h3>
+
+                    <p class="card__description">Este projeto demonstra várias técnicas avançadas de desenvolvimento de jogos em JavaScript.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">Sprites e imagens customizadas com a estética única do universo de Detona Ralph;</li>
+
+                        <li class="card__item">Sistema de Pontuação que acompanhe sua pontuação à medida que progride no jogo;</li>
+
+                        <li class="card__item">Leaderboard disponivel para salvar a sua pontuação em uma tabela de classificação.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML 5">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/detona-ralph-game/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/detona-ralph-game" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/exemploMemory.png" alt="Capa Jogo da memória de futebol">
+
+                <div class="card__body">
+                    <h3 class="card__title">Jogo da memória</h3>
+
+                    <p class="card__description">jogo da memória com temática de futebol.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">HTML5 e CSS3 para a estrutura e aparência do jogo;</li>
+                        <li class="card__item">JavaScript para a lógica de programação e interatividade;</li>
+                        <li class="card__item">Leaderboard disponivel para salvar a sua pontuação em uma tabela de classificação.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
+                        </li>
+    
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/memory-game/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/memory-game" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projetos/exemploClassificador.png" alt="Capa do Desafio de Classificador de nível de Herói da DIO">
+                
+                <div class="card__body">
+                    <h3 class="card__title">Classificador de nível de Herói</h3>
+
+                    <p class="card__description">Desafio da DIO utilizando variáveis, operadores, laços de repetição e estruturas de decisões no JavaScript.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">Usuário pode digitar seu nome e quantidade de XP nos campos disponiveis;</li>
+                        <li class="card__item">Toda a lógica está no JS;</li>
+                        <li class="card__item">No final um alert escrito o nome digitado e o nível dele de acordo com a quantidade de XP digitado.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML 5">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/desafio-classificador-heroi/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/desafio-classificador-heroi" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/exemploYUGIOH.png" alt="Capa do Jogo de Jo-Ken-Po do Yu-Gi-Oh">
+
+                <div class="card__body">
+                    <h3 class="card__title">Yu-Gi-Oh | Jo-ken-po Edition</h3>
+
+                    <p class="card__description">Um mini-game inspirado no clássico Jo-Ken-Po, mas com cartas do universo Yu-Gi-Oh!</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">Manipulação da DOM;</li>
+                        <li class="card__item">Lógica de comparação entre objetos;</li>
+                        <li class="card__item">Uso de addEventListener para eventos dinâmicos.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/yugioh-js-game/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/yugioh-js-game" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card card--reverse">
+
+                <img class="card__cover" src="assets/images/projetos/exemploPokedex.png" alt="Capa da Pokédex feita em JavaScript">
+
+                <div class="card__body">
+                    <h3 class="card__title">Pokédex JavaScript</h3>
+
+                    <p class="card__description">Uma Pokédex interativa construída com HTML, CSS e JavaScript, consumindo dados em tempo real da PokéAPI.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">Listagem de Pokémon com imagens e nomes;</li>
+                        <li class="card__item">Página de detalhes com informações completas (tipo, stats, peso, altura etc);</li>
+                        <li class="card__item">Interface estilizada, moderna e responsiva;</li>
+                        <li class="card__item">Consumo da PokéAPI (API REST pública);</li>
+                        <li class="card__item">Navegação dinâmica utilizando JavaScript puro.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML 5">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/pokedex-js/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/pokedex-js" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/exemploXilofone.png" alt="Capa do Xilofone Virtual">
+
+                <div class="card__body">
+                    <h3 class="card__title">Xilofone Virtual</h3>
+
+                    <p class="card__description">Um xilofone virtual interativo criado com HTML, CSS e JavaScript, onde você pode tocar notas usando o teclado ou o mouse, ajustar o volume e até esconder/mostrar as legendas das teclas.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">Manipulação da DOM;</li>
+                        <li class="card__item">Eventos de teclado (keydown) e clique (click);</li>
+                        <li class="card__item">Criar e controlar sons no navegador;</li>
+                        <li class="card__item">Controle de estado (mutar som, esconder labels, etc).</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/xylophone-virtual-js/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/xylophone-virtual-js" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projetos/exemploMundo.png" alt="Capa do Mundo Invertido | Stranger Things">
+
+                <div class="card__body">
+                    <h3 class="card__title">Mundo Invertido</h3>
+
+                    <p class="card__description">Página com temática do "Stranger Things" que tem "theme switcher" utilizando HTML, CSS e JavaScript.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">HTML: Estruturação da página, Semântica, Acessibilidade, Web Scraping e SEO;</li>
+                        <li class="card__item">CSS: Posicionamentos, Pseudo-elementos, Pseudo-classes, Flexbox, Animações e Responsividade;</li>
+                        <li class="card__item">JavaScript: Manipulação do DOM e Integração com o Firebase.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML 5">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/firebase.svg" alt="Logo Firebase">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/semana-frontend-mundo-invertido/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/semana-frontend-mundo-invertido/" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/exemploSpider.png" alt="Capa Spider-Man Multiverses">
+
+                <div class="card__body">
+                    <h3 class="card__title">Spider-Man Multiverses</h3>
+                    
+                    <p class="card__description">Site interativo inspirado no universo do Homem-Aranha e no conceito de multiversos. O projeto foi desenvolvido como prática dos fundamentos de HTML, CSS e JavaScript.</p>
+
+                    <ul class="card__list">
+                        <li class="card__item">HTML5 – Estrutura das páginas;</li>
+                        <li class="card__item">CSS3 – Estilização, efeitos e responsividade;</li>
+                        <li class="card__item">JavaScript – Interatividade, animações e manipulação da DOM.</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/html-5.svg" alt="Logo HTML">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/css-3.svg" alt="Logo CSS 3">
+                        </li>
+
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/javascript.svg" alt="Logo Javascript">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <a href="https://victorrf.github.io/spiderman-multiverses-dio/" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>  
+                        </a>
+
+                        <a href="https://github.com/victorrf/spiderman-multiverses-dio" target="_blank">
+                            <button class="btn">
+                                <span>Repositório</span>
+                            </button>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/victorrf" target="_blank">
+                <button class="btn btn--primary">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>  
+            </a>
+        </div>
+    </section>
+  
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+
+        <p>Estou disponível para serviços e novas conexões. Contate-me via 
+        e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
+
+        <ul class="menu menu--social">
+            <li>
+                <a class="menu__link" href="https://github.com/victorrf" target="_blank">
+                    <i class="menu__icon bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__link" href="https://www.linkedin.com/in/victorreisferreira/" target="_blank">
+                    <i class="menu__icon bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__link" href="https://w.app/victorrf" target="_blank">
+                    <i class="menu__icon bi bi-whatsapp"></i>
+                    <span>Whatsapp</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__link" href="https://discord.com/users/315533560444354561" target="_blank">
+                    <i class="menu__icon bi bi-discord"></i>
+                    <span>Discord</span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="mailto:victorreisferreira98@gmail.com" target="_blank">
+            <button class="btn btn--primary">
+                <span class="email">victorreisferreira98@gmail.com</span>
+            </button>  
+        </a>
+    </section>
+
     <footer>
         <p>
-            © 2025. Todos os Direitos Reservados. Victor Reis Ferreira. Desenvolvido por <a href="https://github.com/victorrf" target="_blank">victorrf</a>.
+            © 2025 — Criado por <a href="https://github.com/victorrf" target="_blank">victorrf</a>. Este conteúdo é protegido por direitos autorais. Use, compartilhe ou modifique apenas com permissão.
         </p>
     </footer>
-    <script defer src="assets/js/scripts.js"></script>
+
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
