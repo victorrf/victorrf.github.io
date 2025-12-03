@@ -30,7 +30,8 @@
 }
 
 html[data-theme='dark'] .technologies__logo, 
-html[data-theme='dark'] .tech-img {
+html[data-theme='dark'] .tech-img,
+html[data-theme='light'] .scrollTop img {
   filter: invert(1);
 }
 

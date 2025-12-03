@@ -56,6 +56,7 @@
   bottom: 0;
   justify-content: space-between;
   border-top: 1px solid var(--primary-border-color);
+  z-index: 1;
 }
 
 .menu--mobile .menu__link {
@@ -174,6 +175,15 @@ main {
   gap: 1.5rem;
 }
 
+.main__content1 h1,
+.main__content1 p,
+.contact h2,
+.contact p, 
+.contact span,
+.email i{
+  color: #F0F0F0;
+}
+
 .technologies {
   display: flex;
   flex-direction: column;
@@ -186,7 +196,7 @@ main {
 }
 
 .technologies h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: none;
   letter-spacing: normal;
   text-align: start;
@@ -413,7 +423,6 @@ main {
 .contact p, 
 .contact span{
   text-align: center;
-  color: var(--title-color);
 }
 
 .contact .btn {
@@ -439,13 +448,24 @@ footer p {
 }
 
 #home .main__content1 .texto-dinamico h2 {
-    color: var(--primary-color);
+    color: #F0F0F0;
     width: 0;
     white-space: nowrap;
     overflow: hidden;
     animation: cursor 30s ease-in-out infinite;
     font-size: 1rem;
 }
+
+  .scrollTop {
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    bottom: 200px;
+  }
+
+  .scrollTop img {
+    max-height: 35px;
+  }
   
 @keyframes cursor {
     0%, 25%, 50%, 75%, 100% {
@@ -553,6 +573,39 @@ footer p {
     }
 
 }
+
+  .scrollTop {
+    outline: none;
+    border: 0;
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 200px;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+  }
+
+  .scrollTop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .scrollTop img {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
 
 @media (min-width: 992px) {
   .projects__card {
